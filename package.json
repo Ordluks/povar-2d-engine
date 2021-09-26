@@ -1,0 +1,26 @@
+{
+  "name": "povar-2d-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx webpack serve",
+    "build": "npx webpack --config prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ordluks/povar-2d-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ordluks/povar-2d-engine/issues"
+  },
+  "homepage": "https://github.com/Ordluks/povar-2d-engine#readme",
+  "dependencies": {
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  }
+}
