@@ -5,8 +5,21 @@ class P2dCanvas {
 
 	constructor() {
 		const element = document.createElement('canvas')
+
+		if (this.#config.fillPage) {
+			const styles = {
+				position: 'absolute',
+				top: 0,
+				left: 0
+			}
+			Object.assign(element.style, styles)
+		}
+
 		this.element = element
+		this.context = element.getContext('2d')
 		this.resize()
+
+		Povar2dEngine.globalActions.windowResize.subscribe(this.resize, this)
 	}
 
 	resize() {
